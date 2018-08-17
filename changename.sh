@@ -1,6 +1,6 @@
 # Get system Serial Number
 echo "Getting system serial number..."
-NEWNAME="$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')"
+NEWNAME="MAC$(system_profiler SPHardwareDataType | awk '/Serial/ {print $4}')"
 
 echo "New Computer name should be:"
 echo ${NEWNAME}
